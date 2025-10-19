@@ -25,11 +25,16 @@ class Test_get_miles_per_hour(unittest.TestCase):
 
 import unittest
 
-from src.question_c.question_c import use_global
+from src.question_c.question_c import use_global, global_variable
 
-class Test_use_global(unittest.TestCase):
+class test_use_global(unittest.TestCase):
     def test_use_global(self):
-        self.assertEqual(use_global(),5)
+        global global_variable
+        self.assertEqual(global_variable,5)
+        use_global()
+        from src.question_c.question_c import global_variable
+        self.assertEqual(global_variable,10)
+
 
 
 import unittest
