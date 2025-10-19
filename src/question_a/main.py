@@ -8,7 +8,7 @@ def main():
         print("MAIN MENU")
         print("1 - Calculate property assessment value and tax")
         print("2 - Exit")
-        selection = input("Enter selection here: ")
+        selection = input("Enter menu selection here: ")
         print("")
         if selection == "1":
             print("Property Value assessment and tax assessment calculator")
@@ -28,5 +28,8 @@ def main():
             print("Exiting the program.")
             print("")
             break
+        else:
+            print("Error, enter valid menu selection")
+            print("")
 
 main()
