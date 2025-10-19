@@ -23,5 +23,24 @@ class Test_get_miles_per_hour(unittest.TestCase):
     def test_get_miles_per_hour(self):
         self.assertEqual(get_miles_per_hour(32,60),19.883872 )
 
+import unittest
+
+from src.question_c.question_c import use_global
+
+class Test_use_global(unittest.TestCase):
+    def test_use_global(self):
+        self.assertEqual(use_global(),5)
+
+
+import unittest
+
+from src.question_d.question_d import is_prime
+
+class Test_is_prime(unittest.TestCase):
+    def test_is_prime(self):
+        self.assertEqual(is_prime(4),False)
+        self.assertEqual(is_prime(5),True)
+        self.assertEqual(is_prime(11),True)
+
 
 
